@@ -1,0 +1,201 @@
+/*Color Palette used
+#e5efee  #051C3B  #80A4BE #1E3D5A #57859C*/
+body{
+    font-family: Ariel, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    /*font:15px/1.5 Arial, Helvetica, sanss-serif;This cuts off first three
+    for smaller code */
+    padding:0 ;
+    margin: 0;
+    background-color: #e5efee;
+}
+/* Changes the container class.*/
+.container{
+    width:80%;
+    margin: auto;
+    overflow:hidden;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+.button_1{
+    height:38px;
+    background:#051C3B;
+    border:none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff
+}
+
+.dark{
+    padding:15px;
+    background:#E5EFEE;
+    color:black;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/*Header*/
+header{
+    background: #051C3B;
+    color:#ffffff;
+    padding-top:30px;
+    min-width: height 70px;
+    border-bottom:#57859C;
+}
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+
+header li{
+    display:inline;
+   /* float: left; This command causes error with display:inline will need to find out whether to delete float or not*/
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color:#80A4BE;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+}
+
+/* Showcase This is for the image on the home page*/
+#showcase{
+    min-height: 400px;
+    background-image:url("../images/Onfireset.jpg"); /*When I input no-repeat image does not appear?*/
+    text-align:center;
+    color:#ffffff;
+} 
+#showcase h1{
+    margin-top:100px;
+    font-size: 55px;
+    margin-bottom:10px;
+}
+#showcase p{
+    font-size:20px;
+}
+
+/* newsletter the place with the register buttons*/
+#newsletter{
+    padding:15px;
+    color:#ffffff;
+    background:#1E3D5A
+
+}
+#newsletter h1{
+    float:left;
+}
+#newsletter form {
+    float:right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width: 250px;
+}
+
+/*Boxes the colored boxes the text are contained in makes things look fancy*/
+
+#boxes{
+    margin-top:20px;
+}
+#boxes .box{
+    float:left;
+    text-align:center;
+    width:30%;
+    padding:10px;
+}
+#boxes .box img{
+    width:90px;
+}
+
+/*Sidebar*/
+aside#sidebar {
+    float:right;
+    width:30%;
+    margin-top:10px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+}
+/*Main-col*/
+article#main-col{
+    float:left;
+    width:65%
+}
+
+/* Services */
+ul#services li{
+    list-style:none;
+    padding:20px;
+    border:#57859C;
+    margin-bottom:5px;
+    background: #80A4BE;
+
+}
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#051C3B;
+    text-align: center;
+}
+/*Media Queries so site can be used for phones tablets etc.*/
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li
+    #newletter h1,
+    #newsletter form,
+    #boxs .box,
+    article#maincol,
+    aside#sidebar
+{
+        float:none;
+        text-align:center;
+        width:100%;
+    }
+    header{
+        padding-bottom:20px;
+    }
+    #showcase h1{
+        margin-top:40px;
+
+    }
+
+    #newletter button, .quote button{
+        display:block;
+        width:100%;
+    }
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+    }
+}

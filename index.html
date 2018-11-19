@@ -1,43 +1,68 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/eddystyle.css">
-    <title>La Grande Toilette</title>
-</head>
-<body>
-    <!--Navigation-->
-    <header>
-        <div><h1>La Grande Toilette - Home</h1></div>
-        <nav><ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="rent a room.html">Rent a Room</a> </li>
-        </ul></nav>
-    </header>
-    <!--Main Body-->
-    <section>
-        <h1>Mesdames et Messieurs</h1>
-         <p>Welcome to <em>La Grande Toilette</em> one of the most notorious and exquisite lounge and hotel suites in this side of the Detroit Michigan. Here as 
-            a guest you will be enabled to sleep in the states most luxurious rooms, dine on some of the worlds finest cuisines and for some, spend some quality time 
-            away from the world. This is <strong>the</strong> spot for those who either seek adventure, a place for a vacation, honeymooners, and adulterers alike.
-            </p>
-            <img src="images/the-palm-962785_1920.jpg" height="450">
-            <section>
-                    <h1>History </h1>
-                     <p>This prestigious establishment would not have been founded without the efforts of Harold P. Schlong. As far back in 1817, at the tender age of 
-                         11, he came up with the idea for a "stay-in" business that would enable railroad workers either rest or to enable shipments of wood and steel to be shipped westward into the uncharted
-                         territories into the west (the wild west specifically). This would become the focal trade center through which up and coming steel industries as well as the starter oil refineries were inspired through
-                         the laymen whom conducted research there (though the technology for digging oil was not possible until after 1859). Due to his early wealth Harold funded 
-                         the steel mill company known as "The Iron Rod" and "Ballaholic Steel Co." granting him the nickname 'Iron Schlong Harry'. He died early at 26 due to testicular fungal infection and had the name engraved on his tombstone. It's location is now unknown.
-
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="viewport" content="width=device-width">
+        <title>Film Brotherhood</title>
+        <link rel="stylesheet" href="css/EdInependent.css">
+    </head>
+    <body>
+        <header> <!--Top of the site page. ALways the same-->
+            <div class="container">
+                <div id="branding">
+                <h1><span class="highlight">FILM</span> Brotherhood New York-Home</h1>
+            </div>
+            <nav> <!--Navigation links to different pages here-->
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+             
+        <section id="showcase"> <!--WILL ONLY BE ON HOME PAGE
+        image will be used on css as background image behind text-->
+            <div class="container">
+                <h1>Creative Union for Indie Filmmakers</h1>
+                <p>The Film Brotherhood has always been a non-corporate global film production union
+                        dating as far back as 1978, inspired by George Lucas' film "Star Wars A New Hope". Our
+                        mission revolves around aiding filmmakers in getting their ideas down on paper or put
+                        on the big screen.
                         </p>
-                     
-                </section>
-<!--Footer/Copyright-->
-    <footer> 
-    <p>La Grande Toilette Hotel Suites, Copyright &copy;2018</p>
-</footer>
-</body>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section> <!--This is where the main bulk of text starts-->
+        <section id="boxes"> <!--REMINDER Three image boxes just like in wireframe sketch-->
+            <div class="container">
+                <div class="box"> <!--Images are from PIXABAY-->
+                    <img src="images/idealogo.png">
+                    <h3>Want to Make Films</h3>
+                    <p>Learn from some of the most creative minds, both indie as well as Hollywood Professionals</p>
+                </div>
+                <div class="box">
+                    <img src="images/submitlogo.png">
+                    <h3>Submit a Films</h3>
+                        <p>Do you have a film that you want submitted. Get it on the big screen!</p>
+                </div>
+                <div class="box">
+                    <img src="images/teamlogo.png">
+                    <h3>The team of your dreams</h3>
+                        <p>This site enables filmmakers to come an gather both on the web and in real life. We manage budgets to both get experience as well as to pursue our passions.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Film Brotherhood, Copyright &copy; 2018</p>
+        </footer>
+    </body>
 </html>
